@@ -1,0 +1,131 @@
+/* My variable colors */
+
+:root {
+    --primary-color: #5fa2ad;
+    --second-color: #5fa2ad;
+    background: #e6e6e6;
+    background: #e6e6e6;
+    background: #e6e6e6;
+    --white-color: #ffffff;
+}
+
+
+/* Grid normal 12columns */
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    /* 15px de cada lado x2 = 30px */
+    margin: 0 auto;
+    padding: 0rem 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Grid fluid 100% */
+
+.container-fluid {
+    width: 100%;
+    padding: 0px 18px;
+}
+
+
+/* Title Patterns */
+
+h2 {
+    font-family: "Inter";
+    font-weight: 800;
+    font-size: 6.4rem;
+    line-height: 7.7rem;
+    color: #5fa2ad;
+    margin-top: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+h2 span {
+    color: #5fa2ad;
+    text-align: center;
+    align-items: center;
+}
+
+.btn-primary {
+    border-radius: 24px;
+    font-weight: 700;
+    line-height: 2.4rem;
+    font-size: 1.6rem;
+    background-color: #5fa2ad;
+    color: #e6e6e6;
+    padding: 1rem 2.6rem;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #5fa2ad;
+    transform: scale(1.04);
+}
+
+.btn-primary.empty {
+    border: 2px solid #5fa2ad;
+    border-radius: 24px;
+    color: #5fa2ad;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+.btn-primary.empty:hover {
+    color: #e6e6e6;
+    background-color: #5fa2ad;
+}
+
+.menu-item {
+    display: inline-block;
+    color: #e6e6e6;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    transition: all 0.2s;
+}
+
+.menu-item:hover {
+    color: #5fa2ad;
+    transform: scale(1.04);
+}
+
+.tag {
+    border-radius: 5rem;
+    padding: 0.6rem 2.7rem;
+    background-color: #5fa2ad;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+
+/* form pattern */
+
+input[type="text"],
+textarea {
+    background-color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+    border-radius: 0.4rem;
+    width: 100%;
+    padding: 2rem;
+    resize: none;
+    color: #5fa2ad;
+    outline: none;
+    transition: all 0.4s;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+    border: none;
+}
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
