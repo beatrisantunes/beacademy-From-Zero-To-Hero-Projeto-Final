@@ -44,7 +44,7 @@ VALUES
 ('2','Algoritmos','Lógica de Programação','20','15','2014'),
 ('3','Photoshop','Dicas de Photoshop CC','10','8','2014'),
 ('4','PGP','Curso de PHP para iniciantes','40','20','2010'),
-('5','Jarva','Introdução à Linguagem Java','10','29','2000'),
+('5','Java','Introdução à Linguagem Java','10','29','2000'),
 ('6','MySQL','Banco de Dados MySQL','30','15','2016'),
 ('7','Word','Curso completo de Word','40','30','2016'),
 ('8','Sapateado','Danças Rítmicas','40','30','2018'),
@@ -98,9 +98,44 @@ insert into gafanhoto_assiste_curso values
 
 select * from gafanhoto_assiste_curso;
 
-select g.id, g.nome, c.nome, a.idgafanhoto, a.idcurso from gafanhotos g
+create table gafanhoto_assiste_curso (
+	id int NOT NULL AUTO_INCREMENT,
+  data DATE,
+  idgafanhoto INT,
+  idcurso int,
+  PRIMARY KEY (id),
+  foreign key (idgafanhoto) references gafanhotos(id),
+  foreign key (idcurso) references cursos(idcurso)
+) default charset = utf8;
+
+
+insert into gafanhoto_assiste_curso values (DEFAULT, '2020-05-25', '1', '2');
+insert into gafanhoto_assiste_curso values (DEFAULT, '2021-12-03', '2', '16');
+insert into gafanhoto_assiste_curso values (DEFAULT, '2021-08-19', '3', '20');
+insert into gafanhoto_assiste_curso values (DEFAULT, '2022-02-08', '4', '5');
+insert into gafanhoto_assiste_curso values (DEFAULT, '2020-06-23', '5', '8');
+insert into gafanhoto_assiste_curso values (DEFAULT, '2021-07-25', '1', '21');
+
+
+select g.id, g.nome, g.profissao, a.idcurso, c.nome, c.descricao from gafanhotos g 
 join gafanhoto_assiste_curso a
 on g.id = a.idgafanhoto
 join cursos c
-on c.idcursos = a.idcurso
-order by g.nome;
+on c.idcurso = a.idcurso;select nome, profissao, estudando from gafanhotos;
+select nome, descricao, ano from cursos;
+
+select gafanhotos.nome, cursos.nome, cursos.descricao, cursos.ano
+from gafanhotos join cursos
+on cursos.idcurso = gafanhotos.estudando;
+
+select g.nome, c.nome, c.descricao, c.ano
+from gafanhotos as g inner join cursos as c
+on c.idcurso = g.estudando;
+
+select g.nome, c.nome, c.descricao, c.ano
+from gafanhotos as g LEFT OUTER join cursos as c
+on c.idcurso = g.estudando;
+
+select g.nome, c.nome, c.descricao, c.ano
+from gafanhotos as g RIGHT join cursos as c
+on c.idcurso = g.estudando;
