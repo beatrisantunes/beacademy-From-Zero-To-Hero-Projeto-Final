@@ -15,6 +15,7 @@ create table pessoas (
     nacionalidade varchar(20) default 'Brasil', #Brasil por padrão
     primary key (id)           #declara id como chave primária
 ) ;
+
 /*  INSERÇÃO DE DADOS NA TABELA PESSOAS*/
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade) values
@@ -50,7 +51,7 @@ create table pessoas_assiste_curso(
     primary key(id),
     foreign key(idpessoa) references pessoas(id),
     foreign key(idcurso) references cursos(idcursos)
-)default charset = utf8;
+);
 
 insert into pessoas_assiste_curso values
 (default,'2015-12-22','03','6'),

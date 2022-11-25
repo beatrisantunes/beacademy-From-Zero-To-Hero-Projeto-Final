@@ -4,18 +4,17 @@ create database cadastro;
 /*UTILIZAÇÃO DO BANCO DE DADOS*/
 use cadastro;
 
-
 /*  CRIAÇÃO DA TABELA PESSOAS  */
 create table pessoas (
-    id int auto_increment not null,  #declaração de id como chave prmiária da tabela
-    nome varchar(20) not null,
+    id int auto_increment ,  #declaração de id como chave prmiária da tabela
+    nome varchar(20),
     nascimento date,
     sexo enum('M','F'),
     peso decimal(5,2),         #peso com duas casas decimais
     altura decimal(3,2),       #altura em metros
     nacionalidade varchar(20) default 'Brasil', #Brasil por padrão
     primary key (id)           #declara id como chave primária
-) default charset=utf8;
+) 
 
 /*  ACRESCENTANDO NOVA COLUNA   */
 alter table pessoas add column profissao varchar(10) default 'Estudante';
@@ -34,8 +33,6 @@ insert into pessoas values
 /*  MOSTRA TODA A TABELA PESSOAS   */
 select * from pessoas;
 
-
-
 /*  CRAINDO TABELA CURSO SEM CHAVE PRIMÁRIA   */
 create table cursos(
     nome varchar(30) not null unique,   # define nome como único, porém, não como chave primária
@@ -43,7 +40,7 @@ create table cursos(
     carga int unsigned,     #inteiro positivo (sem sinal), economiza 1 byte de armazenamento
     totaulas int unsigned,
     ano year default '2022'
-)default charset=utf8;
+)
 
 /*  ADICIONANDO CHAVE PRIMÁRIA NA PRIMEIRA COLUNA   */
 alter table cursos add column id_curso int unsigned first;
