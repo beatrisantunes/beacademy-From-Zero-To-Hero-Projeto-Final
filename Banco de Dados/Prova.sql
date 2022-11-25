@@ -104,10 +104,10 @@ select * from aluno_estudando;
 
 alter table alunos add column cursopreferido int;
 
-/*especifica que o campo curso preferido será uma chave estrangeira com referencia dessa chave na tabela cursos no campo de chave primaria idcursos*/
+/*especifica que o campo curso preferido será uma chave estrangeira com referencia dessa chave na tabela cursos no campo de chave primaria idcurso*/
 alter table alunos add foreign key(cursopreferido) references cursos(idcurso);
 
-/*preenche no aluno 1 com o codigo do curso preferido desse aluno*/
+/*preenche no aluno com o codigo do curso preferido desse aluno*/
 update alunos set cursopreferido = '2' where id ='1';
 update alunos set cursopreferido = '4' where id ='2';
 update alunos set cursopreferido = '1' where id ='3';
