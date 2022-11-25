@@ -113,36 +113,44 @@ update alunos set cursopreferido = '4' where id ='2';
 update alunos set cursopreferido = '1' where id ='3';
 update alunos set cursopreferido = '3' where id ='4';
 
-/*mostra no result set os campos nome aluno, curso preferido aluno, nome curso(referenciado no codigo numerico do curso), ano do curso(referenciado pelo codigo numerico do curso)*/
-/*tabela de referencia inicial alunos, junta com a tabela cursos*/
-/*aonde o codigo do curso preferido dos alunos se juntam com o codigo da tabela de referencia dos cursos*/
-select alunos.nome, alunos.cursopreferido, cursos.nome, cursos.ano
-from alunos join cursos
-on alunos.cursopreferido = cursos.idcurso;
+/*Junção usando o self join*/
+select a1.id, a2.id
+from aluno_estudando a1 inner join aluno_estudando a2
+on (a1.idaluno <> a2.idaluno)
+where a1.idcurso = a2.idcurso
+order by a1.id;
 
-/*mostra no result set os campos nome aluno, curso preferido aluno, nome curso(referenciado no codigo numerico do curso), ano do curso(referenciado pelo codigo numerico do curso)*/
-/*tabela de referencia inicial alunos, junta com a tabela cursos, aonde tambem atraves da palavra "as" as tabelas adquirem apelidos para simplificar a sintaxe*/
-/*aonde o codigo do curso preferido dos alunos se juntam com o codigo da tabela de referencia dos cursos*/
-/*ordenado por nome*/
+/*Junção usando o inner join*/
 select a.nome, a.cursopreferido, c.nome, c.ano
 from alunos as a inner join cursos as c
 on c.idcurso = a.cursopreferido
 order by a.nome;
 
-/*mostra no result set os campos nome aluno, curso preferido aluno, nome curso(referenciado no codigo numerico do curso), ano do curso(referenciado pelo codigo numerico do curso)*/
-/*tabela de referencia inicial alunos, junta com a tabela cursos dando prioridade no result set para a tabela a esquerda no comando, aonde tambem atraves da palavra "as" as tabelas adquirem apelidos para simplificar a sintaxe*/
-/*aonde o codigo do curso preferido dos alunos se juntam com o codigo da tabela de referencia dos cursos*/
-/*ordenado por nome*/
+/*Junção usando o left join*/
 select a.nome, a.cursopreferido, c.nome, c.ano
 from alunos as a left outer join cursos as c
 on a.cursopreferido = c.idcurso
 order by a.nome;
 
-/*mostra no result set os campos nome aluno, curso preferido aluno, nome curso(referenciado no codigo numerico do curso), ano do curso(referenciado pelo codigo numerico do curso)*/
-/*tabela de referencia inicial alunos, junta com a tabela cursos dando prioridade no result set para a tabela a direita no comando, aonde tambem atraves da palavra "as" as tabelas adquirem apelidos para simplificar a sintaxe*/
-/*aonde o codigo do curso preferido dos alunos se juntam com o codigo da tabela de referencia dos cursos*/
-/*ordenado por nome*/
+/*Junção usando o right join*/
 select a.nome, a.cursopreferido, c.nome, c.ano
 from alunos as a right outer join cursos as c
 on a.cursopreferido = c.idcurso
 order by c.nome;
+
+/*Junção usando o cross join*/
+select a.id, c.idcurso
+from alunos as a
+cross join cursos as c
+where a.id = c.idcurso
+order by a.nome;
+
+/*Junção usando o full join*/
+select a.nome, p.id
+from alunos as a
+left join pessoas as p on a.id = p.id 
+Union all
+select a.id, p.id
+from alunos as a
+right join pessoas as p on a.id = p.id
+order by nome;
