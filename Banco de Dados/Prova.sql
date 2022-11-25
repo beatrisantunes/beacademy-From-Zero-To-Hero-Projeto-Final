@@ -1,143 +1,51 @@
-create database cadastro
+/*  CRIAÇÃO DO NOVO BANCO DE DADOS  */
+create database cadastro;
 
+/*UTILIZAÇÃO DO BANCO DE DADOS*/
 use cadastro;
 
-create table cliente (
-id int not null auto_increment,
-nome varchar(30) not null,
-nascimento date,
-sexo enum('M', 'F'),
-peso decimal(5,2),
-altura decimal(3,2),
-nacionalidade varchar(20) default 'Brasil',
 
-primary key (id)
-) default charset = utf8;
+/*  CRIAÇÃO DA TABELA PESSOAS  */
+create table pessoas (
+    id int auto_increment not null,  #declaração de id como chave prmiária da tabela
+    nome varchar(20) not null,
+    nascimento date,
+    sexo enum('M','F'),
+    peso decimal(5,2),         #peso com duas casas decimais
+    altura decimal(3,2),       #altura em metros
+    nacionalidade varchar(20) default 'Brasil', #Brasil por padrão
+    primary key (id)           #declara id como chave primária
+) default charset=utf8;
 
+/*  ACRESCENTANDO NOVA COLUNA   */
+alter table pessoas add column profissao varchar(10) default 'Estudante';
 
-insert into cliente
-(nome, nascimento, sexo, peso, altura, nacionalidade)
-values
-('Lucival', '1993-07-25', 'M', '89.0', '1.67', 'Brasil'),
-('Camyla', '1991-06-03', 'F', '87.0', '1.60', 'Brasil'),
-('Maria Antonia', '1963-02-22', 'F', '70.0', '1.70', 'Brasil');
+/*  INSERÇÃO DE DADOS NA TABELA PESSOAS     */
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade, profissao) values
+(default, 'Arthur', '2000-08-18', 'M', '105.3', '1.92', default, default),
+(default, 'Júlia', '2002-07-22', 'F', '87.2', '1.71', 'Argentina', default);
 
+/*  SEGUNDA FORMA DE INSERÇÃO, CASO SEJA NA MESMA ORDEM DECLARADA NA TABELA*/
+insert into pessoas values
+(default, 'Marcos', '1998-03-27', 'M', '94.3', '1.64', 'Brasil', 'Tradutor'),
+(default, 'Jean', '2003-02-15', 'M', '87.657', '1.83', 'França', 'Estudante');
 
-alter table cliente
-modify column profissao varchar(20);
-
-create table if not exists cursos (
-nome varchar(30) not null unique,
-descricao text,
-cargahoraria int unsigned,
-totalaulas int unsigned,
-ano year default '2021'
-) default charset = utf8;
-
-alter table cursos
-add column idcursos int first;
-
-alter table cursos
-add primary key(idcursos);
-
-INSERT INTO cursos 
-VALUES
-('1','HTML4','Curso de HTML5', '40','37','2014'),
-('2','Algoritmos','Lógica de Programação','20','15','2014'),
-('3','Photoshop','Dicas de Photoshop CC','10','8','2014'),
-('4','PGP','Curso de PHP para iniciantes','40','20','2010'),
-('5','Java','Introdução à Linguagem Java','10','29','2000'),
-('6','MySQL','Banco de Dados MySQL','30','15','2016'),
-('7','Word','Curso completo de Word','40','30','2016'),
-('8','Sapateado','Danças Rítmicas','40','30','2018'),
-('9','Cozinha Árabe','Aprenda a fazer Kibe','40','30','2018'),
-('10','Youtuber','Gerar polêmica e ganhar inscritos','5','2','2018');
-
-update cursos
-set nome = 'HTML5'
-where idcursos = '1';
-
-update cursos
-set nome = 'PHP', ano = '2015'
-where idcursos = '4';
-
-update cursos
-set nome = 'Java', cargahoraria = '40', ano = '2015'
-where idcursos = '5'
-limit 1;
-
-update cursos
-set ano = '2030', cargahoraria = '100'
-where ano = '2018';
-
-delete from cursos
-where idcursos = '10';
+/*  MOSTRA TODA A TABELA PESSOAS   */
+select * from pessoas;
 
 
 
-select * from cursos;
-select * from gafanhotos;
-desc cliente;
-describe cursos;
-select * from gafanhotos
-order by nome desc; 
+/*  CRAINDO TABELA CURSO SEM CHAVE PRIMÁRIA   */
+create table cursos(
+    nome varchar(30) not null unique,   # define nome como único, porém, não como chave primária
+    descricao text,
+    carga int unsigned,     #inteiro positivo (sem sinal), economiza 1 byte de armazenamento
+    totaulas int unsigned,
+    ano year default '2022'
+)default charset=utf8;
 
-create table gafanhoto_assiste_curso(
-	id int not null auto_increment,
-    data date,
-    idgafanhoto int,
-    idcurso int,
-    primary key(id),
-    foreign key(idgafanhoto) references gafanhotos(id),
-    foreign key(idcurso) references cursos(idcursos)
-)default charset = utf8;
-
-insert into gafanhoto_assiste_curso values
-(default,'2015-12-22','03','6'),
-(default,'2014-01-01','22','12'),
-(default,'2016-05-01','1','19'),
-(default,'2017-08-11','20','20');
-
-select * from gafanhoto_assiste_curso;
-
-create table gafanhoto_assiste_curso (
-	id int NOT NULL AUTO_INCREMENT,
-  data DATE,
-  idgafanhoto INT,
-  idcurso int,
-  PRIMARY KEY (id),
-  foreign key (idgafanhoto) references gafanhotos(id),
-  foreign key (idcurso) references cursos(idcurso)
-) default charset = utf8;
-
-
-insert into gafanhoto_assiste_curso values (DEFAULT, '2020-05-25', '1', '2');
-insert into gafanhoto_assiste_curso values (DEFAULT, '2021-12-03', '2', '16');
-insert into gafanhoto_assiste_curso values (DEFAULT, '2021-08-19', '3', '20');
-insert into gafanhoto_assiste_curso values (DEFAULT, '2022-02-08', '4', '5');
-insert into gafanhoto_assiste_curso values (DEFAULT, '2020-06-23', '5', '8');
-insert into gafanhoto_assiste_curso values (DEFAULT, '2021-07-25', '1', '21');
-
-
-select g.id, g.nome, g.profissao, a.idcurso, c.nome, c.descricao from gafanhotos g 
-join gafanhoto_assiste_curso a
-on g.id = a.idgafanhoto
-join cursos c
-on c.idcurso = a.idcurso;select nome, profissao, estudando from gafanhotos;
-select nome, descricao, ano from cursos;
-
-select gafanhotos.nome, cursos.nome, cursos.descricao, cursos.ano
-from gafanhotos join cursos
-on cursos.idcurso = gafanhotos.estudando;
-
-select g.nome, c.nome, c.descricao, c.ano
-from gafanhotos as g inner join cursos as c
-on c.idcurso = g.estudando;
-
-select g.nome, c.nome, c.descricao, c.ano
-from gafanhotos as g LEFT OUTER join cursos as c
-on c.idcurso = g.estudando;
-
-select g.nome, c.nome, c.descricao, c.ano
-from gafanhotos as g RIGHT join cursos as c
-on c.idcurso = g.estudando;
+/*  ADICIONANDO CHAVE PRIMÁRIA NA PRIMEIRA COLUNA   */
+alter table cursos add column id_curso int unsigned first;
+alter table cursos add primary key (id_curso);
+desc cursos;
