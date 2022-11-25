@@ -1,10 +1,10 @@
-/*  CRIAÇÃO DO NOVO BANCO DE DADOS  */
+/* Criando banco de dados cadastro*/
 create database cadastro;
 
-/*UTILIZAÇÃO DO BANCO DE DADOS*/
+/* Utilizando banco de dados cadastro*/
 use cadastro;
 
-/*  CRIAÇÃO DA TABELA PESSOAS  */
+/* Criando tabela pessoas*/
 create table pessoas (
     id int auto_increment,  #declaração de id como chave prmiária da tabela
     nome varchar(20),
@@ -15,7 +15,8 @@ create table pessoas (
     nacionalidade varchar(20) default 'Brasil', #Brasil por padrão
     primary key (id)           #declara id como chave primária
 ) ;
-/*  INSERÇÃO DE DADOS NA TABELA PESSOAS*/
+
+/* Inserindo dados na tabela pessoas*/
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade) values
 (1, 'Arthur', '2000-08-18', 'M', '105.3', '1.92', default),
@@ -25,6 +26,7 @@ insert into pessoas
 
 select * from pessoas;
 
+/* Criando tabela cursos*/
 create table cursos (
   idcurso int,
   nome varchar(30),
@@ -34,32 +36,32 @@ create table cursos (
   ano year default '2022'
 ) ;
 
+/* Inserindo dados na tabela cursos*/
 insert into cursos values
 (1, 'HTML5', 'Curso de HTML5', 40, 37, 2014),
 (2, 'Algoritmos', 'Lógica de programação', 20, 15, 2014),
 (3, 'Photoshop', 'Dicas de Photoshop CC', 10, 8, 2014),
 (4, 'PHP', 'Curso de PHP para iniciantes', 40, 20, 2015),
-('5', 'Cozinha Árabe', 'Aprender a fazer Kibe', '40', '30', '2018');
-select * from cursos;
+(5, 'Cozinha Árabe', 'Aprender a fazer Kibe', '40', '30', '2018');
 
-describe cursos;
-select * from cursos;
-
+/*Atualizando dados na tabela cursos*/
 update cursos
 set nome = 'HTML5'
 where idcurso = '1';
-
-select * from cursos;
 
 update cursos 
 set nome = 'Algoritmos', ano = '2015', carga = '40'
 where idcurso = '2'
 limit 1; 
 
+/*Removendo dados na tabela cursos*/
 delete from cursos
 where ano ='2018'
 limit 2;
 
+select * from cursos;
+
+/* Criando tabela alunos*/
 create table alunos (
   id int(11) auto_increment,
   nome varchar(30),
@@ -72,6 +74,7 @@ create table alunos (
   primary key (id)
 );
 
+/* Inserindo dados na tabela alunos*/
 insert into alunos values
 (1, 'Arthur', 'Advogado', '2000-08-18', 'M', '105.3', '1.92', default),
 (2, 'Júlia', default ,'2002-07-22', 'F', '87.2', '1.71', 'Argentina'),
@@ -80,7 +83,8 @@ insert into alunos values
 
 select * from alunos;
 
-create table aluno_assiste_curso (
+/* Criando tabela aluno_estudando*/
+create table aluno_estudando (
 	id int auto_increment,
   data date,
   idaluno int,
@@ -90,13 +94,13 @@ create table aluno_assiste_curso (
   foreign key (idcurso) references cursos(idcurso)
 );
 
-/*Inserindo dados na tabela aluno_assiste_curso*/
-insert into aluno_assiste_curso values (default, '2020-05-25', '1','3');
-insert into aluno_assiste_curso values ( default,'2021-12-03', '2','1');
-insert into aluno_assiste_curso values (default, '2021-08-19', '3','4');
-insert into aluno_assiste_curso values (default, '2022-02-08', '4','2');
+/*Inserindo dados na tabela aluno_estudando*/
+insert into aluno_estudando values (default, '2020-05-25', '1','3');
+insert into aluno_estudando values ( default,'2021-12-03', '2','1');
+insert into aluno_estudando values (default, '2021-08-19', '3','4');
+insert into aluno_estudando values (default, '2022-02-08', '4','2');
 
-select * from aluno_assiste_curso;
+select * from aluno_estudando;
 
 alter table alunos add column cursopreferido int;
 
