@@ -2,198 +2,275 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="./assets/img/favicon.svg" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700;800;900&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/pattern.css" />
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link rel="stylesheet" href="./assets/styles/responsive.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/about__me.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/hobbies.css">
+    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon.svg">
+    <script src="https://kit.fontawesome.com/02a1b0e1a6.js" crossorigin="anonymous"></script>
 
     <title>Portfólio</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="./assets/img/logo.png" alt="Logo" />
-            </div>
-            <nav>
-                <ul class="menu">
+    <header id="header">
 
-                    <a href="#about">
-                        <li class="btn-primary">Quem Sou
-                        </li>
-                    </a>
-                    <li>
-                        <a href="#cases" class="btn-primary">Cases</a>
-                    </li>
-                </ul>
-                <a href="#contact" class="btn-primary"><span>Contato</span></a>
-                <ul class="menu-social ">
-                    <li>
-            </nav>
+        <div class="logo">
+            <h4>&lt; Beatris Antunes Silva &frasl; &gt;</h4>
+        </div>
 
-            <i class="toggle close-menu "></i>
-            </nav>
-            <i class="toggle open-menu "></i>
+        <nav>
+            <ul class="list">
+                <a href="#about__me">
+                    <li class="item ">Sobre mim</li>
+                </a>
+                <a href="#skills__hobbies">
+                    <li class="item ">Habilidades</li>
+                </a>
+                <a href="#skills__hobbies ">
+                    <li class="item ">Hobbies</li>
+                </a>
+                <a href="#formation">
+                    <li class="item ">Formação</li>
+                </a>
+                <a href="#projects__title">
+                    <li class="item ">Projetos</li>
+                </a>
+            </ul>
+        </nav>
+        <i class="toggle close-menu "></i>
+        </nav>
+        <i class="toggle open-menu "></i>
         </div>
     </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="content">
+                <div class="content__text">
+                    <h1> Hello, World! <br /><span> </span></h1>
+                    <h2>Welcome</h2>
 
-    <main>
-        <section class="s-hero ">
-            <div class="container ">
-                <div class="title ">
-                    <h1> Hello, World! <br /><span>  Welcome </span></h1>
-                    <h2>Desenvolvedora Front-end</h2>
 
+                    <div class="content__buttons">
+                        <a href="https://github.com/beatrisantunes" target="_blank "><button class="content__buttons___btn ">GitHub</button></a>
+                        <a href="https://www.linkedin.com/in/beatrisantunessilva/" target="_blank "><button class="content__buttons___btn ">LinkedIn</button></a>
 
-                    <div class="techs ">
-                        <img src="./assets/img/html.svg " alt="Linguagem HTML " />
-                        <img src="./assets/img/css.svg " alt="Linguagem CSS " />
-                        <img src="./assets/img/JS.svg " alt="Linguagem Javascript " />
-                    </div>
-        </section>
-
-        <section class="s-success ">
-            <div class="container ">
-                <div class="title-success ">
-                </div>
-                <div class="cards ">
-                    <div class="card active ">
-                        <div class="card-title ">
-                            <p>
-                                <img src="./assets/img/Alura.png " alt=" Bootcamp " />
-                            </p>
-                            <a href="https://www.alura.com.br/oracle-next-education " target="_blank ">
-                                <p> <strong>ONE Oracle/Alura</strong></p>
-                            </a>
-                            <p>Cursando</p>
-                        </div>
-                    </div>
-
-                    <div class="card ">
-                        <div class="card-title ">
-                            <p>
-                                <img src="./assets/img/be academy.png " alt="Bootcamp " />
-                            </p>
-                            <a href="https://www.beacademy.com.br/dev-low-code-central-it-run2biz/?utm_source=instagram&utm_medium=texto&utm_campaign=br-social-ed " target="_blank ">
-                                <p> <strong>From Zero to Hero</strong></p>
-                            </a>
-                            <p>Cursando</p>
-                        </div>
-                    </div>
-
-                    <div class="card ">
-                        <div class="card-title ">
-                            <p>
-                                <img src="./assets/img/Formação.png " alt="Faculdade " />
-                            </p>
-                            <a href="https://www.unip.br/cursos/graduacao/tecnologicos/analise_desenvolvimento_sistemas.aspx " target="_blank ">
-                                <p> <strong>Análise e Desenvolvimento de Sistemas</strong></p>
-                            </a>
-                            <p>Cursando</p>
-                        </div>
-                    </div>
-        </section>
-
-        <section id="about" class="s-about ">
-            <div class="container ">
-                <div class="about-me ">
-                    <h2>QUEM SOU<span>.</span></h2>
-                    <p>
-                        Me chamo Beatris e sou desenvolvedora Front-End, estou cursando Análise e Desenvolvimento de Sistemas na UNIP, fiz vários cursos voltados ao desenvolvimento web, alguns bootcamps e atualmente estou cursando dois programas, um de formação Front-End Alura/Oracle
-                        e outro de formação em Low Code From Zero to Hero com uma excelente grade curricular e duração de seis meses. Dentre minhas principais Soft-Skills posso destacar a criatividade, curiosidade, dedicação e disciplina.
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/beatrisantunessilva/ " target="_blank "><img src="./assets/img/Linkedin.png " alt="Meu Linkedin " /></a>
-                        </li>
-
-                        <li>
-                            <a href="https://github.com/beatrisantunes " target="_blank "><img src="./assets/img/Github.png " alt="Meu Github " /></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="my-picture">
-                    <div class="img__wrapper">
-                        <img src="./assets/img/Eu.png" alt="Foto de Perfil" />
                     </div>
                 </div>
-        </section>
 
-        <section id="cases" class="s-cases ">
-            <div class="container ">
-                <div class="title-cases ">
-                    <h2>CASES<span>.</span></h2>
-                </div>
-                <div class="cases ">
-                    <div class="case ">
-                        <img src="./assets/img/Stranger Things.svg " alt="Case 1 " />
-                        <a href="https://github.com/beatrisantunes/Site-Stranger-Things-Dio " target="_blank ">
-                            <p>Site Stranger Things</p>
-                        </a>
-                    </div>
-                    <div class="case ">
-                        <img src="./assets/img/NLW.svg " alt="Case 2 " />
-                        <a href="https://github.com/beatrisantunes/Projeto-NLW " target="_blank ">
-                            <p>Projeto NLW</p>
-                        </a>
-                    </div>
-                    <div class="case ">
-                        <img src="./assets/img/Decodificador.svg " alt="Case 3 " />
-                        <a href="https://github.com/beatrisantunes/Projeto-Decodificador-Alura " target="_blank ">
-                            <p>Decodificador</p>
-                        </a>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section id="contact" class=" s-contact">
-            <div class="container">
-                <div class="title-contact">
-                    <h2>
-                        ENTRE EM <br /> CONTATO
-                        <span>.</span>
+            <div class="image">
+                <div class="img__wrapper">
+                    <img src="css/images/Eu.png " alt=" ">
                 </div>
-
-                <form class="form-contact" method="post" action=" ">
-                    <div class="input-group">
-                        <input type="text" placeholder="Preencha seu nome" required />
-                    </div>
-
-                    <div class="input-group">
-                        <input type="text" placeholder="Preencha seu email" required />
-                    </div>
-
-                    <div class="input-group">
-                        <textarea rows="6" placeholder="Deixe sua mensagem"></textarea>
-                    </div>
-                    <div class="input-button">
-                        <button class="btn-primary" type="submit">ENVIAR</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container ">
-            <div class="copy">
-                <p>Desenvolvido por Beatris Antunes Silva</p>
             </div>
         </div>
-    </footer>
+    </section>
+    <section class="about__me" id="about__me">
+        <div class="about__me___content">
+            <h1>Sobre mim</h1>
+            <p>Obrigada pela visita! <br><br> Me chamo Beatris, sou iniciante na área de tecnologia, estou cursando Análise e Desenvolvimento de Sistemas na
+                <a href="https://www.unip.br/cursos/graduacao/tecnologicos/analise_desenvolvimento_sistemas.aspx" target="_blank ">UNIP</a>, fiz vários cursos voltados ao desenvolvimento web e alguns bootcamps, atualmente estou cursando dois programas,
+                um em formação Front-End <a href="https://www.alura.com.br/oracle-next-education " target="_blank ">Alura/Oracle</a> e outro de formação em Low Code
+                <a href="https://www.beacademy.com.br/dev-low-code-central-it-run2biz/?utm_source=instagram&utm_medium=texto&utm_campaign=br-social-ed " target="_blank "> From Zero to Hero</a> com uma excelente grade curricular e duração de seis meses.
+                <br> Dentre minhas principais Soft-Skills posso destacar a criatividade, curiosidade, dedicação e disciplina.</p>
+        </div>
+        <div class="container_cards">
+            <div class="card">
+                <a href="https://www.linkedin.com/in/beatrisantunessilva/ " target="_blank ">
+                    <div class="face face--front "><i class="fa fa-linkedin "></i></div>
+                    <div class="face face--back ">LinkedIn</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/beatrisantunes " target="_blank ">
+                    <div class="face face--front "><i class="fa fa-github "></i></div>
+                    <div class="face face--back ">GitHub</div>
+                </a>
+            </div>
 
+            </a>
+        </div>
+        </div>
+        <div class="content__buttons___about">
+            <a href="https://github.com/beatrisantunes" target="_blank "><button class="content__buttons___btn___about ">GitHub</button></a>
+            <a href="https://www.linkedin.com/in/beatrisantunessilva/" target="_blank "><button class="content__buttons___btn___about ">LinkedIn</button></a>
+
+        </div>
+
+
+    </section>
+    <section id="skills__hobbies">
+        <h1>Skills</h1>
+        <div class="skills">
+            <div class="skill__cards">
+                <img src="css/images/HTML.svg " alt=" ">
+                <h2>HTML</h2>
+            </div>
+            <div class="skill__cards">
+                <img src="css/images/CSS.svg " alt=" ">
+                <h2>CSS</h2>
+            </div>
+            <div class="skill__cards">
+                <img src="css/images/JS.svg " alt=" ">
+                <h2>JAVASCRIPT</h2>
+            </div>
+            <div class="skill__cards">
+                <img src="css/images/Python.svg " alt=" ">
+                <h2>PYTHON</h2>
+            </div>
+            <div class="skill__cards">
+                <img src="css/images/Java.svg " alt=" ">
+                <h2>JAVA</h2>
+            </div>
+        </div>
+        <h1>Hobbies</h1>
+        <div class="hobbies" id=" ">
+            <div class="hobbies__cards ">
+                <img src="css/images/Ler.svg " alt=" ">
+                <h2>LER</h2>
+            </div>
+
+            <div class="hobbies__cards">
+                <img src="css/images/Jogar.svg " alt=" ">
+                <h2>JOGAR</h2>
+            </div>
+
+            <div class="hobbies__cards">
+                <img src="css/images/Assistir.svg " alt=" ">
+                <h2>ASSISTIR</h2>
+            </div>
+            <div class="hobbies__cards">
+                <img src="css/images/Música.svg " alt=" ">
+                <h2>ESCUTAR MÚSICA</h2>
+            </div>
+            <div class="hobbies__cards">
+                <img src="css/images/Pets.svg " alt=" ">
+                <h2>FICAR COM MEUS ANIMAIS</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="formation">
+        <h1>Formação</h1>
+        <div class="formation">
+            <div class="formation__cards">
+                <img src="css/images/Formação.png " alt=" ">
+                <a href="https://www.unip.br/cursos/graduacao/tecnologicos/analise_desenvolvimento_sistemas.aspx " target="_blank ">
+                    <h2>Análise e Desenvolvimento de Sistemas</h2>
+                </a>
+                <p>Cursando</p>
+            </div>
+            <div class=" formation__cards">
+                <img src="css/images/Alura.svg " alt=" ">
+                <a href="https://www.alura.com.br/oracle-next-education " target="_blank ">
+                    <h2>ONE Oracle/Alura</h2>
+                </a>
+                <p>Cursando</p>
+            </div>
+            <div class=" formation__cards">
+                <img src="css/images/be academy.svg " alt=" ">
+                <a href="https://www.beacademy.com.br/dev-low-code-central-it-run2biz/?utm_source=instagram&utm_medium=texto&utm_campaign=br-social-ed " target="_blank ">
+                    <h2>From Zero to Hero</h2>
+                </a>
+                <p>Cursando</p>
+            </div>
+        </div>
+
+    </section>
+    <h1 id="projects__title">Projetos</h1>
+    <section class="projects">
+
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio__btn" id="radio__one">
+                <input type="radio" name="radio__btn" id="radio__two">
+                <input type="radio" name="radio__btn" id="radio__three">
+                <input type="radio" name="radio__btn" id="radio__for">
+
+                <!--Slide images-->
+                <div class="slide one">
+                    <img src="css/images/Forca.svg" alt="">
+                    <a href="https://github.com/beatrisantunes/Projeto-Jogo-da-Forca-Alura" target="_blank">
+                        <p>Jogo da forca</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <img src="css/images/Stranger Things.svg" alt="">
+                    <a href="https://github.com/beatrisantunes/Site-Stranger-Things-Dio" target="_blank">
+                        <p>Site Stranger Things</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <img src="css/images/Decodificador.svg" alt="">
+                    <a href="https://github.com/beatrisantunes/Projeto-Decodificador-Alura" target="_blank">
+                        <p>Decodificador</p>
+                    </a>
+                </div>
+                <div class="slide">
+                    <img src="css/images/NLW.svg" alt="">
+                    <a href="https://github.com/beatrisantunes/Projeto-NLW" target="_blank">
+                        <p>Projeto NLW</p>
+                    </a>
+                </div>
+
+                <!--Navigation-->
+                <div class="navigation__auto">
+                    <div class="auto__btn___one"></div>
+                    <div class="auto__btn___two"></div>
+                    <div class="auto__btn___three"></div>
+                    <div class="auto__btn___for"></div>
+                </div>
+            </div>
+            <div class="manual__navigation">
+                <label for="radio__one" class="manual__btn"></label>
+                <label for="radio__two" class="manual__btn"></label>
+                <label for="radio__three" class="manual__btn"></label>
+                <label for="radio__for" class="manual__btn"></label>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__container">
+
+            <div class="contact__input">
+                <h3>Quer entrar em contato comigo?</h3>
+                <h3>Preencha o formulário abaixo e eu retornarei o mais breve possivel.</h3>
+
+                <form><input type="text" data-ls-module="charCounter" maxlength="25" name="name" id="name" placeholder="Nome">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <input type="text" name="subject" id="subject" placeholder="Assunto">
+                    <textarea name=" " id="text__area" cols="30" rows="10"></textarea>
+                    <button>Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Beatris Antunes Silva</p>
+    </footer>
+    </section>
+    <section>
+        <div class="back-to-top">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        </div>
+    </section>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./assets/js/main.js "></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

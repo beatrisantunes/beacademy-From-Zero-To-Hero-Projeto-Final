@@ -1,0 +1,62 @@
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+     :root {
+        color: #5fa2ad;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: "Comfortaa";
+        background: #e6e6e6;
+        text-align: center;
+    }
+    /*====Botão scroll====*/
+    
+    .back-to-top {
+        color: #5fa2ad;
+        /* alterar cor do botão */
+        position: fixed;
+        z-index: 999;
+        bottom: 2rem;
+        /* posição vertical: quanto maior, mais para cima */
+        right: 1rem;
+        /* posição horizontal: quanto maior, mais para esquerda */
+        display: none;
+    }
+    
+    .back-to-top:active,
+    .back-to-top:focus,
+    .back-to-top:hover {
+        text-decoration: none;
+        color: #d3d2d2;
+        /* alterar cor do botão quando o mouse estiver em cima ou mobile */
+    }
+    
+    .back-to-top i {
+        font-size: 3em;
+        /* alterar tamanho do botão */
+    }
+    
+    @media screen and (max-width: 768px) {
+        .back-to-top {
+            display: none;
+            color: #5fa2ad;
+        }
+    }
+    /*====scroll color====*/
+    
+     ::-webkit-scrollbar {
+        width: 18px;
+        color: #5fa2ad;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background-color: #d1d4d6;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background-color: #5fa2ad;
+        border-radius: 8px;
+    }

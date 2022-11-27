@@ -1,0 +1,144 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    margin-top: 50px;
+}
+
+.content {
+    width: 70%;
+    background: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 30%;
+    background: #e6e6e6;
+}
+
+.content__text h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #ffff;
+}
+
+.content__text h2 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #5fa2ad;
+}
+
+.content__text p {
+    color: #5fa2ad;
+    padding: 15px;
+    font-size: 1.4rem;
+}
+
+.content__buttons {
+    display: none;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.content__buttons___btn {
+    width: 180px;
+    height: 35px;
+    border: 1px solid #5fa2ad;
+    background: #e6e6e6;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.content__buttons___btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.img__wrapper {
+    max-width: 230px;
+    position: relative;
+}
+
+.img__wrapper img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    margin-top: 130px;
+}
+
+.img__wrapper::before {
+    content: "";
+    content: #5fa2ad;
+    position: absolute;
+    inset: -15px;
+    border: 6px solid #e6e6e6;
+    border-top-color: #5fa2ad;
+    border-bottom-color: #5fa2ad;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ======== Responsive ==========*/
+
+@media screen and (max-width: 768px) {
+    .content__text {
+        margin-left: 15px;
+    }
+    .content__text p {
+        padding: 0;
+        font-size: 1rem;
+    }
+    .content__text h1 {
+        font-size: 2.3rem;
+        color: #5fa2ad;
+        color: #e6e6e6;
+    }
+    .content {
+        width: 100%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .image {
+        margin-left: 220px;
+    }
+    .img__wrapper {
+        width: 120px;
+        justify-content: center;
+    }
+    .img__wrapper img {
+        margin-top: 20px;
+    }
+    .content__buttons {
+        display: none;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content__buttons___btn {
+        color: #5fa2ad;
+    }
+    .img__wrapper::before {
+        content: #5fa2ad;
+        position: absolute;
+        inset: -15px;
+        border: 6px solid #e6e6e6;
+        border-top-color: #5fa2ad;
+        border-bottom-color: #5fa2ad;
+        border-radius: 50%;
+        animation: spin 3s linear infinite;
+    }
+}

@@ -1,0 +1,23 @@
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #5fa2ad;
+}
+
+footer p {
+    color: #5fa2ad;
+}
+
+
+/*=========Responsive===========*/
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 50px;
+    }
+    footer p {
+        font-size: .6rem;
+    }
+}
