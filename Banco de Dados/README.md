@@ -2,7 +2,7 @@
 
 Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "From Zero to Hero".
 
-## O projeto:
+# O projeto:
 
 Criação de um banco de dados utilizando MySQL.
 
