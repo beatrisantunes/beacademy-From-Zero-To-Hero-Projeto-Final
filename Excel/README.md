@@ -1,12 +1,12 @@
-<h1> Exel </h1>
+<h1 align = center> Excel </h1>
 
 Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "From Zero to Hero"
 
-### O projeto
+## O projeto
 
 Criação de uma planilha de orçamento pessoal utilizando a ferramenta Excel.
 
-### Resultado do projeto
+## Resultado do projeto
 ![Captura de tela_20221125_173011](https://user-images.githubusercontent.com/79115923/204052787-91505c17-137e-4b71-a930-b897672a5633.png)
 ![image](https://user-images.githubusercontent.com/79115923/204052867-65b4937d-6031-401b-bccc-635d4acce0c0.png)
 ![image](https://user-images.githubusercontent.com/79115923/204052908-43069b10-0394-483e-9874-26b698a3b00c.png)
