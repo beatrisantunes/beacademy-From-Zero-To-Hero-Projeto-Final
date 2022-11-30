@@ -8,4 +8,5 @@ Criação de um banco de dados utilizando MySQL.
 
 ## Resultado do projeto:
 
-![cadastro](https://user-images.githubusercontent.com/79115923/204045204-e70ce8fa-613d-4435-9925-4a2e1995c352.jpeg)
+
+![cadastro](https://user-images.githubusercontent.com/79115923/204797632-41f7143c-827c-4ab1-9c23-be37c338450c.png)
