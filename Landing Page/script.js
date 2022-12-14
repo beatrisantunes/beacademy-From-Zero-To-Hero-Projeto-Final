@@ -1,3 +1,11 @@
+const menu = document.querySelector('.menu');
+const navMenu = document.querySelector('.nav-menu');
+
+menu.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+    navMenu.classList.toggle('ativo');
+})
+
 let count = 1;
 document.getElementById("radio__one").checked = true;
 
@@ -27,15 +35,15 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
     `
  .about__me,
-  .about,
-   .contact,
-    .cards,
-      .footer,
-        .formation,
-           .head,
-            .hobbies,
-              .projects,
-                .skills `, { interval: 200 }
+ .about,
+ .contact,
+ .cards,
+ .footer,
+ .formation,
+ .head,
+ .hobbies,
+ .projects,
+ .skills `, { interval: 60 }
 );
 
 const nav = document.querySelector("header .container nav");
@@ -69,3 +77,14 @@ $(document).ready(function() {
             })
         });
 })
+
+function validacao() {
+    console.log('iniciando validacao');
+    let cpf = document.getElementById('Informações recebidas').value;
+    console.log(cpf.length);
+    if (cpf.length == 11) {
+        alert('Suas informações foram enviadas')
+    } else {
+        alert('Informações incorretas')
+    }
+}

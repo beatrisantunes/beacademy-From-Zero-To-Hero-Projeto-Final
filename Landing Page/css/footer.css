@@ -13,7 +13,7 @@ footer p {
 
 /*=========Responsive===========*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     footer {
         height: 50px;
     }

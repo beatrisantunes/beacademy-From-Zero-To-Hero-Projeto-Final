@@ -1,0 +1,76 @@
+
+@font-face {
+    font-family: "NeueMontrealBold";
+    src: url("assets/fonts/NeueMontreal-Bold.otf");
+    
+}
+@font-face {
+    font-family: "NeueMontrealRegular";
+    src: url("assets/fonts/NeueMontreal-Regular.otf");
+}
+@font-face {
+    font-family: "NeueMontrealMedio";
+    src: url("assets/fonts/NeueMontreal-Medium.otf");
+}
+
+:root {
+    --color--yellow: #FED43A;
+    --color--black: #000000;
+    --color--white: #ffffff;
+    --color--card: #061A21;
+    --font--regular: "NeueMontrealRegular";
+    --font--medio: "NeueMontrealMedio";
+    --font--bold: "NeueMontrealBold";
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat";
+
+}
+main {
+    margin-left: 100px;
+}
+
+/*=========Animation=========*/
+.reveal{
+    position: relative;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+  
+  .reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal__right{
+    position: relative;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  
+  .reveal__right.active{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+
+/*==========Responsive=============*/
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    
+}

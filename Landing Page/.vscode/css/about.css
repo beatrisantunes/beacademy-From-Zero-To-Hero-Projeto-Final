@@ -1,0 +1,198 @@
+#about {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to left, #FED43A 0, #FED43A 45%, #000000 30%);
+   
+}
+.about {
+    display: flex;
+}
+.content__about {
+    width: 55%;
+    
+    
+}
+.menu__reponsive {
+    display: none;
+}
+.text__stroke___one {
+    font-size: 2.5rem;
+    font-family: var(--font--bold);
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+    color: var(--color--black);
+    padding: 50px 0 0 30px
+}
+.text__name {
+    font-size: 3rem;
+    font-family: var(--font--bold);
+    color: var(--color--white);
+    padding-left: 30px;
+    
+}
+.text__stroke___two {
+    font-size: 3rem;
+    font-family: var(--font--bold);
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+    color: var(--color--black);
+    padding-left: 30px;
+}
+.btn__about {
+    padding: 50px 30px;
+}
+.btn__about button {
+    width: 200px;
+    height: 50px;
+    font-family: var(--font--regular);
+    background-color: var(--color--yellow);
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    
+}
+.icons__responsive {
+    display: none;
+}
+.content__cards {
+    width: 45%;
+}
+.about__cards {
+   
+    height: 100vh;
+    background-color: var(--color--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem;
+    justify-content: center;
+    line-height: 8rem;
+    border-radius: 0.8rem;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    background-color: var(--color--yellow);
+    border: none;
+    
+   
+}
+.card a {
+    color: #e7e6e6;
+}
+.fa {
+    filter: invert(100%) sepia(48%) saturate(0%) hue-rotate(187deg) brightness(114%) contrast(100%);
+}
+.face {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.8rem;
+    background-size: cover;
+    background-position: center center;
+    transition: transform 0.5s ease-in-out;
+    background-color: var(--color--card);
+    
+}
+.face--front {
+    background-color: var(--color--card); 
+    font-size: 3rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color--black)
+}
+.face--back {
+    background-color: var(--color--card);
+    font-size: 1.2rem;
+    transform: rotateX(90deg); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color--black);
+    font-family: var(--font--regular);
+}
+.face--back p {
+    filter: invert(100%) sepia(48%) saturate(0%) hue-rotate(187deg) brightness(114%) contrast(100%);
+}
+.card:hover .face--front {
+    transform: rotateX(-180deg);
+   
+}
+.card:hover .face--back {
+    transform: rotateX(0deg);
+    z-index: 1;
+    background-color: var(--color--card); 
+}
+
+
+/*==========Responsive=============*/
+@media only screen and (max-width: 600px) {
+    #about {
+        background: var(--color--black);
+    }
+    .content__about {
+        width: 100%;
+        margin-top: 0px;
+    }
+    .content__cards {
+        display: none;
+    }
+    .text__stroke___one {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+    .text__name {
+        font-size: 2rem;
+        padding-left: 20px;
+        
+    }
+    .text__stroke___two {
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+    .btn__about {
+        padding: 30px 20px;
+    }
+    .btn__about button {
+        width: 150px;
+        height: 40px;
+        font-family: var(--font--regular);
+        background-color: var(--color--yellow);
+        text-transform: uppercase;  
+    }
+    .icons__responsive {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .icons__responsive a {
+        font-size: 30px;
+        filter: invert(88%) sepia(57%) saturate(1627%) hue-rotate(323deg) brightness(101%) contrast(102%);
+    }
+    .menu__reponsive {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .fa-bars {
+        font-size: 30px;
+        padding: 30px 30px 0 0;
+        filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(175deg) brightness(106%) contrast(102%);
+    }
+}
+    
+   

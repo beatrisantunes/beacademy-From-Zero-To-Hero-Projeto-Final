@@ -54,7 +54,7 @@
 
 /*=========Responsive===========*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .contact {
         margin-top: 100px;
     }

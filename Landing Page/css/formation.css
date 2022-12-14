@@ -60,7 +60,7 @@
 
 /*=========Responsive===========*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .formation {
         display: flex;
         flex-direction: column;

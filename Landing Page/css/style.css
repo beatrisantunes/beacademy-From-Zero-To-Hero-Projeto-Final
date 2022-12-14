@@ -39,7 +39,7 @@
         /* alterar tamanho do botão */
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 750px) {
         .back-to-top {
             display: none;
             color: #5fa2ad;

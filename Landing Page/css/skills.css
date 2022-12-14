@@ -44,7 +44,7 @@
 
 /*=========Responsive===========*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .skills__hobbies {
         width: 100%;
         text-align: center;

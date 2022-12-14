@@ -41,7 +41,7 @@
 
 /*=========Responsive===========*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 750px) {
     .hobbies {
         height: 250px;
         display: grid;
