@@ -12,3 +12,7 @@ Criação de um banco de dados utilizando MySQL.
 
 > Bootcamp From Zero to Hero
 
+## 🛠 Tecnologias
+
+- MySQL
+- Git e Github
