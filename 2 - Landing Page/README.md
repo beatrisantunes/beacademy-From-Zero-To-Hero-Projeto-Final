@@ -4,7 +4,8 @@ Criação de um site de hospedagem de Pousada utilizando a HTML, CSS e Javascrip
 
 ## Resultado do projeto
 
-![previa](https://user-images.githubusercontent.com/79115923/207781507-75a7913a-d0b8-4085-9c6b-5aea4b10d5c9.gif)
+![previa](https://user-images.githubusercontent.com/79115923/207901621-9532b34b-15ab-40a2-89cf-2e4299131f04.gif)
+
 
 > Bootcamp From Zero To Hero.
 
