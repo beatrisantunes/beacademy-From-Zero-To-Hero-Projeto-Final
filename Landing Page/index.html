@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="topo">
         <div class="tamanho-maximo-container container">
             <a href="index.html" class="link-logotipo">Pousada <span>Secret Palace</span></a>
@@ -25,156 +26,225 @@
             </div>
         </div>
     </div>
+    <main id="main">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+            <source src="./assets/video intro.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="content-area">
+            <h1>
+                <nobr>Pousada Secret Palace</nobr>
+            </h1>
+            <h4>Pousada Luxuosa</h4>
+        </div>
+        </div>
 
-    <div class=" principal ">
-        <div class="titulo-site ">
-            <div class="titulo-site-descricao ">
-                <h1>Pousada Secret Palace</h1>
-                <p>Pousada luxuosa</p>
+    </main>
+    <div class="tamanho-maximo-container secao-container ">
+        <h2>
+            Seja bem-vindo(a)!
+        </h2>
+        <p>
+            Venha relaxar em nossas incríveis acomodações e aproveite tudo que Ubatuba possa oferecer.
+        </p>
+        <p>
+            Temos quartos para solteiro, casal ou família.
+        </p>
+    </div>
+    <div id="sobre" class="tamanho-maximo-container secao-container container-descricao">
+        <h2>
+            Sobre a pousada!
+        </h2>
+        <p>
+            Conheça sobre nossa maravilhosa pousada.
+        </p>
+    </div>
+
+    <h1 id="descricao_title">Descrição</h1>
+    <div class="container_card_descricao">
+        <article class="card">
+            <div class="flip">
+                <section class="front-card">
+                    <img src="./assets/Pousada.png" alt=" Pousada">
+                </section>
+
+                <section class="back-card">
+                    <img src="./assets/Pousada back.png" alt="Back Card">
+                </section>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="flip">
+                <section class="front-card">
+                    <img src="./assets/Recepção.png" alt="Recepção">
+                </section>
+                <section class="back-card">
+                    <img src="./assets/Recepção back.png" alt="Back Card">
+                </section>
+            </div>
+        </article>
+        <article class="card">
+            <div class="flip">
+                <section class="front-card">
+                    <img src="./assets/Quartos.png" alt="Quartos">
+                </section>
+                <section class=" back-card ">
+                    <img src="./assets/Quartos back.png" alt="Back Card">
+                </section>
+            </div>
+        </article>
+        <article class="card">
+            <div class="flip">
+                <section class="front-card">
+                    <img src="./assets/Alimentação.png" alt="Alimentação">
+                </section>
+                <section class=" back-card ">
+                    <img src="./assets/Alimentação back.png" alt="Back Card">
+                </section>
+            </div>
+        </article>
+    </div>
+
+    <h1 id="quarto_title">Quartos</h1>
+    <div class="container_card_quarto">
+        <article class="card">
+            <div class="flip">
+                <section class="front-card ">
+                    <img src="./assets/Quarto Solteiro.png" alt="Card Solteiro ">
+                </section>
+
+                <section class="back-card ">
+                    <img src="./assets/Solteiro back.png " alt="Back Card ">
+                </section>
+            </div>
+        </article>
+        <article class="card ">
+            <div class="flip ">
+                <section class="front-card ">
+                    <img src="./assets/Quarto Casal.png" alt="Card Casal ">
+                </section>
+                <section class="back-card ">
+                    <img src="./assets/Casal Back.png " alt="Back Card ">
+                </section>
+            </div>
+        </article>
+        <article class="card ">
+            <div class="flip ">
+                <section class="front-card ">
+                    <img src="./assets/Quarto Família.png " alt="Card Família ">
+                </section>
+                <section class=" back-card ">
+                    <img src="./assets/Família back.png " alt="Back Card ">
+                </section>
+            </div>
+        </article>
+        <article class="card ">
+            <div class="flip ">
+                <section class="front-card ">
+                    <img src="./assets/Quarto Suite.png" alt="Card Suite ">
+                </section>
+                <section class=" back-card ">
+                    <img src="./assets/Suite Back.png" alt="Back Card ">
+                </section>
+            </div>
+        </article>
+    </div>
+
+
+    <h1 id="quarto_title">Quartos</h1>
+    <section id="quartos">
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Buttons-->
+                <input type="radio" name="radio__btn" id="radio__one">
+                <input type="radio" name="radio__btn" id="radio__two">
+                <input type="radio" name="radio__btn" id="radio__three">
+                <input type="radio" name="radio__btn" id="radio__four">
+
+                <!--Slide images-->
+
+                <div class="slide one">
+                    <img src="assets/quarto-solteiro1.jpg " alt="Quarto de solteiro " title="Quarto de solteiro ">
+                    <p>Quarto de Solteiro</p>
+
+                </div>
+                <div class="slide">
+                    <img src="assets/quarto-casal1.jpg " alt="Quarto de casal " title="Quarto de casal ">
+
+                    <p>Quarto de Casal</p>
+
+                </div>
+                <div class="slide">
+                    <img src="assets/quarto-familia3.jpg" alt="Quarto família " title="Quarto família ">
+
+                    <p>Quarto Família</p>
+
+                </div>
+
+                <div class="slide">
+                    <img src="assets/Quarto Suíte.jpg" alt="Quarto Suíte" title="Quarto Suíte">
+
+                    <p>Quarto Suíte</p>
+
+                </div>
+
+                <!--Navigation-->
+                <div class="navigation__auto">
+                    <div class="auto__btn___one"></div>
+                    <div class="auto__btn___two"></div>
+                    <div class="auto__btn___three"></div>
+                    <div class="auto__btn___four"></div>
+                </div>
+            </div>
+            <div class="manual__navigation">
+                <label for="radio__one" class="manual__btn"></label>
+                <label for="radio__two" class="manual__btn"></label>
+                <label for="radio__three" class="manual__btn"></label>
+                <label for="radio__four" class="manual__btn"></label>
             </div>
         </div>
+    </section>
 
-        <div class="tamanho-maximo-container secao-container ">
-            <h2>
-                Seja bem-vindo(a)!
-            </h2>
-            <p>
-                Venha relaxar em nossas incríveis acomodações e aproveite tudo que Ubatuba possa oferecer.
-            </p>
-            <p>
-                Temos quartos para solteiro, casal ou família.
-            </p>
-        </div>
-        <div id="sobre" class="tamanho-maximo-container secao-container container-descricao">
-            <h2>
-                Sobre a pousada!
-            </h2>
+    <div id="mapa" class="tamanho-maximo-container secao-container ">
+        <h2>
+            Localização
+        </h2>
 
-            <p>
-                Conheça sobre nossa maravilhosa pousada.
-            </p>
-        </div>
+        <p>
+            Veja como nos encontrar.
+        </p>
+    </div>
 
-        <section id="descricao">
-            <h1>Descrição</h1>
-            <div class="descricao">
-                <div class="descricao__cards">
-                    <img src="assets/pousada-piscina.jpg " alt="Faixada " title="Faixada " />
+    <div class="container-rota ">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58558.65717138872!2d-45.1371702537722!3d-23.463491641146955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd5205fcfa58ff%3A0xe398de39ae9151e8!2sR.%20Praia%20Domingas%20Dias%20-%20Perequ%C3%AA-Acu%2C%20Ubatuba%20-%20SP%2C%2011680-000!5e0!3m2!1spt-BR!2sbr!4v1661833194564!5m2!1spt-BR!2sbr "
+            width="100% " height="450 " frameborder="0 " ; allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+    </div>
 
-                    <h3>A pousada</h3>
-                    <p>
-                        A Pousada Secret Palace fica próxima à Praia Domingas Dias, praia calma e ótima para famílias com crianças.<br>A pousada dispõe de piscina ao ar livre, estacionamento privativo gratuito, Wi-Fi gratuito e bar.</p>
 
-                </div>
-                <div class="descricao__cards ">
-                    <img src="assets/pousada-quarto.jpg " alt="Quartos " title="Quartos " />
-                    <h3>Nossos quartos</h3>
-                    <p>
-                        Temos quartos sofisticados com Tv Smart com os melhores serviços de streaming, camas confortáveis, varanda com rede para relaxar e banheiro privativo. Além disso, as acomodações contam com ar condicionado e guarda-roupa.
-                    </p>
-
-                </div>
-                <div class="descricao__cards ">
-                    <img src="assets/pousada-buffet.jpg " alt="Restaurante " title="Restaurante " />
-                    <h3>Alimentação</h3>
-                    <p>
-                        A Pousada serve diariamente um delícioso buffet bem completo no café da manhã e nossos restaurantes funcionam 24hrs.
-                    </p>
-
-                </div>
-                <div class="descricao__cards">
-                    <img src="assets/pousada-recepcao.jpg " alt="Recepção " title="Recepção " />
-                    <h3>Recepção</h3>
-                    <p>
-                        A nossa recepção fica aberta 24hrs.
-                    </p>
-
-                </div>
-            </div>
-
-        </section>
-        <h1 id="quarto_title">Quartos</h1>
-        <section id="quartos">
-            <div class="slider">
-                <div class="slides">
-                    <!--Radio Buttons-->
-                    <input type="radio" name="radio__btn" id="radio__one">
-                    <input type="radio" name="radio__btn" id="radio__two">
-                    <input type="radio" name="radio__btn" id="radio__three">
-
-                    <!--Slide images-->
-
-                    <div class="slide one">
-                        <img src="assets/quarto-solteiro1.jpg " alt="Quarto de solteiro " title="Quarto de solteiro ">
-                        <p>Quarto de Solteiro</p>
-
+    <section id="appointment " class="appointment ">
+        <div class="containerCadastro ">
+            <h2 class="appointment__title ">Faça seu Cadastro</h2>
+            <form id="formCadastro ">
+                <div class="appointment__personalData ">
+                    <div class="appointment__inputWrapper ">
+                        <label class="appointment__labelWrapper ">Nome</label>
+                        <input name="nome " type="text " minlength="3 " required placeholder="Digite seu Nome " />
+                        <label id="erro " class="erro "></label>
                     </div>
-                    <div class="slide">
-                        <img src="assets/quarto-casal1.jpg " alt="Quarto de casal " title="Quarto de casal ">
-
-                        <p>Quarto de Casal</p>
-
+                    <div class="appointment__inputWrapper ">
+                        <label class="appointment__labelWrapper ">Sobrenome</label>
+                        <input name="sobrenome " type="text " minlength="3 " required placeholder="Digite seu Sobrenome " />
+                        <label id="erro2 " class="erro "></label>
                     </div>
-                    <div class="slide">
-                        <img src="assets/quarto-familia1.jpg " alt="Quarto família " title="Quarto família ">
-
-                        <p>Quarto Família</p>
-
+                    <div class="appointment__inputWrapper ">
+                        <label class="appointment__labelWrapper ">E-mail</label>
+                        <input name="email " type="email " required placeholder="Digite seu E-mail " />
+                        <label id="erro3 " class="erro "></label>
                     </div>
-                    <!--Navigation-->
-                    <div class="navigation__auto">
-                        <div class="auto__btn___one"></div>
-                        <div class="auto__btn___two"></div>
-                        <div class="auto__btn___three"></div>
-
-                    </div>
-                </div>
-                <div class="manual__navigation">
-                    <label for="radio__one" class="manual__btn"></label>
-                    <label for="radio__two" class="manual__btn"></label>
-                    <label for="radio__three" class="manual__btn"></label>
-                </div>
-            </div>
-        </section>
-
-        <div id="mapa" class="tamanho-maximo-container secao-container">
-            <h2>
-                Localização
-            </h2>
-
-            <p>
-                Veja como nos encontrar.
-            </p>
-        </div>
-
-        <div class="container-rota">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58558.65717138872!2d-45.1371702537722!3d-23.463491641146955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd5205fcfa58ff%3A0xe398de39ae9151e8!2sR.%20Praia%20Domingas%20Dias%20-%20Perequ%C3%AA-Acu%2C%20Ubatuba%20-%20SP%2C%2011680-000!5e0!3m2!1spt-BR!2sbr!4v1661833194564!5m2!1spt-BR!2sbr "
-                width="100%" height="450" frameborder="0" ; allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
-        </div>
-
-
-        <section id="appointment " class="appointment ">
-            <div class="containerCadastro ">
-                <h2 class="appointment__title">Faça seu Cadastro</h2>
-                <form id="formCadastro ">
-                    <div class="appointment__personalData ">
-                        <div class="appointment__inputWrapper ">
-                            <label class="appointment__labelWrapper ">Nome</label>
-                            <input name="nome " type="text " minlength="3 " required placeholder="Digite seu Nome " />
-                            <label id="erro " class="erro "></label>
-                        </div>
-                        <div class="appointment__inputWrapper ">
-                            <label class="appointment__labelWrapper ">Sobrenome</label>
-                            <input name="sobrenome " type="text " minlength="3 " required placeholder="Digite seu Sobrenome " />
-                            <label id="erro2 " class="erro "></label>
-                        </div>
-                        <div class="appointment__inputWrapper ">
-                            <label class="appointment__labelWrapper ">E-mail</label>
-                            <input name="email " type="email " required placeholder="Digite seu E-mail " />
-                            <label id="erro3 " class="erro "></label>
-                        </div>
-                        <div class="appointment__inputWrapper ">
-                            <label class="appointment__labelWrapper " min-width="11 " max-width="11 ">Telefone</label
+                    <div class="appointment__inputWrapper ">
+                        <label class="appointment__labelWrapper " min-width="11 " max-width="11 ">Telefone</label
                         >
                         <input
                           required
@@ -184,18 +254,18 @@
                           pattern="([0-9]{2}) [0-9]{5}-[0-9]{4} "
                         />
                         <label id="erro4 " class="erro "></label>
-                        </div>
                     </div>
-                    <div class="appointment__personalData ">
-                        <div class="appointment__inputWrapper ">
-                            <label class="appointment__labelWrapper ">Mensagem</label>
-                            <textarea name="mensagem " id="message " cols="30 " rows="10 "></textarea>
-                        </div>
+                </div>
+                <div class="appointment__personalData ">
+                    <div class="appointment__inputWrapper ">
+                        <label class="appointment__labelWrapper ">Mensagem</label>
+                        <textarea name="mensagem " id="message " cols="30 " rows="10 "></textarea>
                     </div>
-                    <button type="submit ">Cadastrar</button>
-                </form>
-            </div>
-        </section>
+                </div>
+                <button type="submit ">Cadastrar</button>
+            </form>
+        </div>
+    </section>
 
     </div>
     </section>
