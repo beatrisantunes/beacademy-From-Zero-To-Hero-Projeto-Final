@@ -1,4 +1,4 @@
-<h1 align = center> Excel </h1>
+<h1 align = center> Excel: </h1>
 
 Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "From Zero to Hero"
 
