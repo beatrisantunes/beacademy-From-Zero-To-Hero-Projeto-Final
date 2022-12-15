@@ -43,3 +43,4 @@ export function validateSignup() {
     showError("#erro2", invalidSobrenome || !sobrenome, Errors.SURNAME);
     showError("#erro3", invalidEmail || !email, Errors.EMAIL);
 }
+return valid;
