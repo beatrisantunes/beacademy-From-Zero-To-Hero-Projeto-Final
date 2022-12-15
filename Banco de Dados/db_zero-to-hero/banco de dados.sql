@@ -34,20 +34,11 @@ create table post (
   constraint post_ibfk_1 foreign key (idusuario) references usuario (idusuario)
 );
 
-/* Inserindo dados na tabela post*/
-insert into post values
-(1, 'Mais uma aula de programação, bora?', default,'1'),
-(2, 'Conquista nova, muito obrigada Deus', default,'2'),
-(3, ' Banco de dados é muito dificil, socorro', default,'3'),
-(4, 'Alguém pra me indicar um curso de backend?', default,'4'),
-(5, 'Vim comunicar que fui promovida para analista front-end pleno', default,'5');
-
-select* from post;
 
 /* Criando tabela comentario*/
 create table comentario(
   comentarioid int,
-  descricao varchar(500) default 'Parabéns!!!',
+  descricao varchar(500) default null,
   criacao date default '2022-11-30',
   idusuario int not null auto_increment,
   postid int,
@@ -58,11 +49,3 @@ create table comentario(
   constraint comentario_ibfk_2 foreign key (postid) references post (postid)
 );
 
-/* Inserindo dados na tabela comentario*/
-insert into comentario values
-(1,'Bora, aula massa', default, default, 1),
-(2, default, default, default, 2),
-(3,'É dificil, mas acostuma', default, default, 3),
-(4,'Indico o bootcamp BeAcademy, muito conteúdo', default, default, 4);
-
-select * from comentario;
