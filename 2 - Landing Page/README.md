@@ -9,7 +9,7 @@ Criação de um site de hospedagem de Pousada utilizando a HTML, CSS e Javascrip
 
 > Bootcamp From Zero To Hero.
 
-[🔗 Clique aqui para acessar](https://beatrisantunes.github.io/2---Landing-Page/index.html)
+[🔗 Clique aqui para acessar](https://beatrisantunes.github.io/2---Landing-Page-teste/)
 
 
 ## 🛠 Tecnologias
