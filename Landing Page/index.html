@@ -1,253 +1,241 @@
 <!DOCTYPE html>
+<html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="author" content="Beatris Antunes Silva">
-    <meta name="description" content="Web Designer Portfólio">
-    <meta name="keyword" content="Portfólio">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/about__me.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/hobbies.css">
-    <link rel="stylesheet" href="css/formation.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="css/images/favicon.svg">
-    <script src="https://kit.fontawesome.com/02a1b0e1a6.js" crossorigin="anonymous"></script>
-
-    <title>Portfólio</title>
+    <meta name="description" content="Site de Pousada">
+    <meta name="keyword" content="Cadastro de Hospedagem">
+    <title>Pousada Secret Palace</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header">
+    <div class="topo">
+        <div class="tamanho-maximo-container container">
+            <a href="index.html" class="link-logotipo">Pousada <span>Secret Palace</span></a>
 
-        <div class="logo">
-            <h4>&lt; Beatris Antunes Silva &frasl; &gt;</h4>
+            <div>
+                <a class="link-topo" href="#sobre">Sobre</a>
+                <a class="link-topo" href="#mapa">Localização</a>
+                <a class="link-topo" href="#quartos">Quartos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class=" principal ">
+        <div class="titulo-site ">
+            <div class="titulo-site-descricao ">
+                <h1>Pousada Secret Palace</h1>
+                <p>Pousada luxuosa</p>
+            </div>
         </div>
 
-        <nav>
-            <ul class="list">
-                <a href="#about__me">
-                    <li class="item ">Sobre mim</li>
-                </a>
-                <a href="#skills__hobbies">
-                    <li class="item ">Habilidades</li>
-                </a>
-                <a href="#skills__hobbies ">
-                    <li class="item ">Hobbies</li>
-                </a>
-                <a href="#formation">
-                    <li class="item ">Formação</li>
-                </a>
-                <a href="#projects__title">
-                    <li class="item ">Projetos</li>
-                </a>
-            </ul>
-        </nav>
+        <div class="tamanho-maximo-container secao-container ">
+            <h2>
+                Seja bem-vindo(a)!
+            </h2>
+            <p>
+                Venha relaxar em nossas incríveis acomodações e aproveite tudo que Ubatuba possa oferecer.
+            </p>
+            <p>
+                Temos quartos para solteiro, casal ou família.
+            </p>
         </div>
-    </header>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="content">
-                <div class="content__text">
-                    <h1> Hello, World! <br /><span> </span></h1>
-                    <h2>Welcome</h2>
+        <div id="sobre" class="tamanho-maximo-container secao-container container-descricao">
+            <h2>
+                Sobre a pousada!
+            </h2>
 
+            <p>
+                Conheça sobre nossa maravilhosa pousada.
+            </p>
+        </div>
 
-                    <div class="content__buttons">
-                        <a href="https://github.com/beatrisantunes" target="_blank "><button class="content__buttons___btn ">GitHub</button></a>
-                        <a href="https://www.linkedin.com/in/beatrisantunessilva/" target="_blank "><button class="content__buttons___btn ">LinkedIn</button></a>
+        <section id="descricao">
+            <h1>Descrição</h1>
+            <div class="descricao">
+                <div class="descricao__cards">
+                    <img src="assets/pousada-piscina.jpg " alt="Faixada " title="Faixada " />
 
-                    </div>
+                    <h3>A pousada</h3>
+                    <p>
+                        A Pousada Secret Palace fica próxima à Praia Domingas Dias, praia calma e ótima para famílias com crianças.<br>A pousada dispõe de piscina ao ar livre, estacionamento privativo gratuito, Wi-Fi gratuito e bar.</p>
+
                 </div>
+                <div class="descricao__cards ">
+                    <img src="assets/pousada-quarto.jpg " alt="Quartos " title="Quartos " />
+                    <h3>Nossos quartos</h3>
+                    <p>
+                        Temos quartos sofisticados com Tv Smart com os melhores serviços de streaming, camas confortáveis, varanda com rede para relaxar e banheiro privativo. Além disso, as acomodações contam com ar condicionado e guarda-roupa.
+                    </p>
 
-            </div>
-            <div class="image">
-                <div class="img__wrapper">
-                    <img src="css/images/Eu.png " alt=" ">
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="about__me" id="about__me">
-        <div class="about__me___content">
-            <h1>Sobre mim</h1>
-            <p>Obrigada pela visita! <br><br> Me chamo Beatris, sou iniciante na área de tecnologia, estou cursando Análise e Desenvolvimento de Sistemas na
-                <a href="https://www.unip.br/cursos/graduacao/tecnologicos/analise_desenvolvimento_sistemas.aspx" target="_blank ">UNIP</a>, fiz vários cursos voltados ao desenvolvimento web e alguns bootcamps, atualmente estou cursando dois programas,
-                um em formação Front-End <a href="https://www.alura.com.br/oracle-next-education " target="_blank ">Alura/Oracle</a> e outro de formação em Low Code
-                <a href="https://www.beacademy.com.br/dev-low-code-central-it-run2biz/?utm_source=instagram&utm_medium=texto&utm_campaign=br-social-ed " target="_blank "> From Zero to Hero</a> com uma excelente grade curricular e duração de seis meses.
-                <br> Dentre minhas principais Soft-Skills posso destacar a criatividade, curiosidade, dedicação e disciplina.</p>
-        </div>
-        <div class="container_cards">
-            <div class="card">
-                <a href="https://www.linkedin.com/in/beatrisantunessilva/ " target="_blank ">
-                    <div class="face face--front "><i class="fa fa-linkedin "></i></div>
-                    <div class="face face--back ">LinkedIn</div>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://github.com/beatrisantunes " target="_blank ">
-                    <div class="face face--front "><i class="fa fa-github "></i></div>
-                    <div class="face face--back ">GitHub</div>
-                </a>
-            </div>
+                <div class="descricao__cards ">
+                    <img src="assets/pousada-buffet.jpg " alt="Restaurante " title="Restaurante " />
+                    <h3>Alimentação</h3>
+                    <p>
+                        A Pousada serve diariamente um delícioso buffet bem completo no café da manhã e nossos restaurantes funcionam 24hrs.
+                    </p>
 
-            </a>
-        </div>
-        </div>
-        <div class="content__buttons___about">
-            <a href="https://github.com/beatrisantunes" target="_blank "><button class="content__buttons___btn___about ">GitHub</button></a>
-            <a href="https://www.linkedin.com/in/beatrisantunessilva/" target="_blank "><button class="content__buttons___btn___about ">LinkedIn</button></a>
-
-        </div>
-
-
-    </section>
-    <section id="skills__hobbies">
-        <h1>Skills</h1>
-        <div class="skills">
-            <div class="skill__cards">
-                <img src="css/images/HTML.svg" alt=" ">
-                <h2>HTML</h2>
-            </div>
-            <div class="skill__cards">
-                <img src="css/images/CSS.svg" alt=" ">
-                <h2>CSS</h2>
-            </div>
-            <div class="skill__cards">
-                <img src="css/images/JS.svg" alt=" ">
-                <h2>JAVASCRIPT</h2>
-            </div>
-            <div class="skill__cards">
-                <img src="css/images/Python.svg" alt=" ">
-                <h2>PYTHON</h2>
-            </div>
-            <div class="skill__cards">
-                <img src="css/images/Java.svg" alt=" ">
-                <h2>JAVA</h2>
-            </div>
-        </div>
-
-        <section id="formation">
-            <h1>Formação</h1>
-            <div class="formation">
-                <div class="formation__cards">
-                    <img src="css/images/Formação.png " alt=" ">
-                    <a href="https://www.unip.br/cursos/graduacao/tecnologicos/analise_desenvolvimento_sistemas.aspx " target="_blank ">
-                        <h2>Análise e Desenvolvimento de Sistemas</h2>
-                    </a>
-                    <p>Cursando</p>
                 </div>
-                <div class=" formation__cards">
-                    <img src="css/images/Alura.svg " alt=" ">
-                    <a href="https://www.alura.com.br/oracle-next-education " target="_blank ">
-                        <h2>ONE Oracle/Alura</h2>
-                    </a>
-                    <p>Cursando</p>
-                </div>
-                <div class=" formation__cards">
-                    <img src="css/images/be academy.svg " alt=" ">
-                    <a href="https://www.beacademy.com.br/dev-low-code-central-it-run2biz/?utm_source=instagram&utm_medium=texto&utm_campaign=br-social-ed " target="_blank ">
-                        <h2>From Zero to Hero</h2>
-                    </a>
-                    <p>Cursando</p>
+                <div class="descricao__cards">
+                    <img src="assets/pousada-recepcao.jpg " alt="Recepção " title="Recepção " />
+                    <h3>Recepção</h3>
+                    <p>
+                        A nossa recepção fica aberta 24hrs.
+                    </p>
+
                 </div>
             </div>
 
         </section>
-        <h1 id="projects__title">Projetos</h1>
-        <section class="projects">
-
+        <h1 id="quarto_title">Quartos</h1>
+        <section id="quartos">
             <div class="slider">
                 <div class="slides">
                     <!--Radio Buttons-->
                     <input type="radio" name="radio__btn" id="radio__one">
                     <input type="radio" name="radio__btn" id="radio__two">
                     <input type="radio" name="radio__btn" id="radio__three">
-                    <input type="radio" name="radio__btn" id="radio__for">
 
                     <!--Slide images-->
-                    <div class="slide one">
-                        <img src="css/images/Forca.svg" alt="">
-                        <a href="https://github.com/beatrisantunes/Projeto-Jogo-da-Forca-Alura" target="_blank">
-                            <p>Jogo da forca</p>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="css/images/Site Stranger Things.svg" alt="">
-                        <a href="https://github.com/beatrisantunes/Site-Stranger-Things-Dio" target="_blank">
-                            <p>Site Stranger Things</p>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="css/images/Decodificador.png" alt="">
-                        <a href="https://github.com/beatrisantunes/Projeto-Decodificador-Alura" target="_blank">
-                            <p>Decodificador</p>
-                        </a>
-                    </div>
-                    <div class="slide">
-                        <img src="css/images/NLW.png" alt="">
-                        <a href="https://github.com/beatrisantunes/Projeto-NLW" target="_blank">
-                            <p>Projeto NLW</p>
-                        </a>
-                    </div>
 
+                    <div class="slide one">
+                        <img src="assets/quarto-solteiro1.jpg " alt="Quarto de solteiro " title="Quarto de solteiro ">
+                        <p>Quarto de Solteiro</p>
+
+                    </div>
+                    <div class="slide">
+                        <img src="assets/quarto-casal1.jpg " alt="Quarto de casal " title="Quarto de casal ">
+
+                        <p>Quarto de Casal</p>
+
+                    </div>
+                    <div class="slide">
+                        <img src="assets/quarto-familia1.jpg " alt="Quarto família " title="Quarto família ">
+
+                        <p>Quarto Família</p>
+
+                    </div>
                     <!--Navigation-->
                     <div class="navigation__auto">
                         <div class="auto__btn___one"></div>
                         <div class="auto__btn___two"></div>
                         <div class="auto__btn___three"></div>
-                        <div class="auto__btn___for"></div>
+
                     </div>
                 </div>
                 <div class="manual__navigation">
                     <label for="radio__one" class="manual__btn"></label>
                     <label for="radio__two" class="manual__btn"></label>
                     <label for="radio__three" class="manual__btn"></label>
-                    <label for="radio__for" class="manual__btn"></label>
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <div class="contact__container">
 
-                <div class="contact__input">
-                    <h3>Quer entrar em contato comigo?</h3>
-                    <h3>Preencha o formulário abaixo e eu retornarei o mais breve possivel.</h3>
+        <div id="mapa" class="tamanho-maximo-container secao-container">
+            <h2>
+                Localização
+            </h2>
 
-                    <form class="container__contact" action="https://formsubmit.co/beatris.antunes2012@gmail.com" method="POST"><input type="text" data-ls-module="charCounter" maxlength="25" name="name" id="name" placeholder="Nome">
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                        <input type="text" name="subject" id="subject" placeholder="Assunto">
-                        <textarea name=" " id="text__area" cols="30" rows="10"></textarea>
-                        <button>Enviar</button>
-                    </form>
-                </div>
-
-            </div>
-        </section>
-
-        <footer>
-            <p>Desenvolvido por Beatris Antunes Silva</p>
-        </footer>
-    </section>
-    <section>
-        <div class="back-to-top">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <p>
+                Veja como nos encontrar.
+            </p>
         </div>
-    </section>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
-</body>
 
-</html>
+        <div class="container-rota">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58558.65717138872!2d-45.1371702537722!3d-23.463491641146955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd5205fcfa58ff%3A0xe398de39ae9151e8!2sR.%20Praia%20Domingas%20Dias%20-%20Perequ%C3%AA-Acu%2C%20Ubatuba%20-%20SP%2C%2011680-000!5e0!3m2!1spt-BR!2sbr!4v1661833194564!5m2!1spt-BR!2sbr "
+                width="100%" height="450" frameborder="0" ; allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+        </div>
+
+
+        <section id="appointment " class="appointment ">
+            <div class="containerCadastro ">
+                <h2 class="appointment__title">Faça seu Cadastro</h2>
+                <form id="formCadastro ">
+                    <div class="appointment__personalData ">
+                        <div class="appointment__inputWrapper ">
+                            <label class="appointment__labelWrapper ">Nome</label>
+                            <input name="nome " type="text " minlength="3 " required placeholder="Digite seu Nome " />
+                            <label id="erro " class="erro "></label>
+                        </div>
+                        <div class="appointment__inputWrapper ">
+                            <label class="appointment__labelWrapper ">Sobrenome</label>
+                            <input name="sobrenome " type="text " minlength="3 " required placeholder="Digite seu Sobrenome " />
+                            <label id="erro2 " class="erro "></label>
+                        </div>
+                        <div class="appointment__inputWrapper ">
+                            <label class="appointment__labelWrapper ">E-mail</label>
+                            <input name="email " type="email " required placeholder="Digite seu E-mail " />
+                            <label id="erro3 " class="erro "></label>
+                        </div>
+                        <div class="appointment__inputWrapper ">
+                            <label class="appointment__labelWrapper " min-width="11 " max-width="11 ">Telefone</label
+                        >
+                        <input
+                          required
+                          type="tel "
+                          name="telefone "
+                          placeholder="(99) 9999-9999 "
+                          pattern="([0-9]{2}) [0-9]{5}-[0-9]{4} "
+                        />
+                        <label id="erro4 " class="erro "></label>
+                        </div>
+                    </div>
+                    <div class="appointment__personalData ">
+                        <div class="appointment__inputWrapper ">
+                            <label class="appointment__labelWrapper ">Mensagem</label>
+                            <textarea name="mensagem " id="message " cols="30 " rows="10 "></textarea>
+                        </div>
+                    </div>
+                    <button type="submit ">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+    </section>
+    <div class="rodape ">
+        <div class="tamanho-maximo-container rodape-container ">
+            <div class="rodape-info ">
+                <h4>Entre em contato conosco:</h4>
+            </div>
+
+            <a class="rodape-info rodape-link " target="_blank " href="https://goo.gl/maps/xBUTNQLXWH2oNsu16 ">
+                <img class="rodape-icone " src="assets/icones/endereco.png " alt="Ícone endereco " title="Ícone endereco " />
+
+                <p>
+                    Endereço R. Praia Domingas Dias - Perequê-Acu, Ubatuba - SP
+                </p>
+            </a>
+
+            <div class="rodape-info ">
+                <img class="rodape-icone " src="assets/icones/telefone.png " alt="Ícone telefone " title="Ícone telefone " />
+
+                <p>
+                    Cel: 5511959595959
+                </p>
+            </div>
+
+            <a class="rodape-info rodape-link " target="_blank " href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city& ">
+                <img class="rodape-icone " src="assets/icones/calendario.png " alt="Ícone calendario " title="Ícone calendario " />
+
+                <p>
+                    Faça sua reserva pelo Booking.com
+                </p>
+            </a>
+
+            <div class="rodape-copyright ">
+                © Copyright - Pousada Secret Palace
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js "></script>
+</body>
 
 </html>
