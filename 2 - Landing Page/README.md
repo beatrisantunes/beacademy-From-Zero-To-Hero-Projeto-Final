@@ -1,4 +1,4 @@
-<h1 align = center> Landing Page </h1>
+<h1 align = center> Landing Page: </h1>
 
 Criação de um site de hospedagem de Pousada utilizando a HTML, CSS e Javascript
 
