@@ -6,13 +6,12 @@ Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "Fr
 
 **3 - Prova Escrita e Desenvolvimento de um banco de dados:**
 
-  **3.1 - Prova será solicitado a escrita de querys:**
+ **3.2 - Projeto Desenvolvimento de um banco de dados:**
+ ***"db_zero_to_hero"***
 
-   - Insert
-   - Select
-   - Update
-   - Delete
-   - Joins
+ - Tabelas
+ - Users 
+ - Comments
 
 
 ## 💻🛠 Tecnologias e Ferramentas: 
