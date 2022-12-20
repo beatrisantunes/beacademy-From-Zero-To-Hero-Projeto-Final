@@ -17,7 +17,7 @@
 
 Repositório para envio do projeto final proposto nas aulas do bootcamp "From Zero to Hero".
 
-<h2> 📌 Etapas </h2>
+<h2> 📌 Etapas: </h2>
 
 **1 - Planilha Excel:**
 
