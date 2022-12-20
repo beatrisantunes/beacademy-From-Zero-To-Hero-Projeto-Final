@@ -16,6 +16,11 @@ Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "Fr
 - Procs
 - Tabela dinâmica
 
+## 💻🛠 Tecnologias e Ferramentas: 
+
+- Excel
+- Git e Github
+
 ## 📌 Resultado:
 <img width="500" src="https://i.imgur.com/jR8qTZZ.png"/>
 <img width="500" src="https://i.imgur.com/IzCU8VF.png"/>
@@ -28,7 +33,4 @@ Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "Fr
 
 Criação de uma planilha de orçamento pessoal utilizando a ferramenta Excel.
 
-## 💻🛠 Tecnologias e Ferramentas: 
 
-- Excel
-- Git e Github
