@@ -42,6 +42,7 @@ Projeto desenvolvido como parte do projeto final proposto durante o bootcamp "Fr
 
 Criação de um site de hospedagem de Pousada utilizando a HTML, CSS e Javascript.
 
+
 ## Link:
 [🔗Site ](https://beatrisantunes.github.io/2---Landing-Page-teste/)
 
